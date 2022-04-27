@@ -19,11 +19,7 @@ let getBlocks = (img, fullName, actor, gender, house, wandCore, alive) => {
 
 let getCardsToShow = (arrow) => {
   arrow.forEach((element) => {
-    if (element.alive === true) {
-      element.alive = "yes";
-    } else {
-      element.alive = "no";
-    }
+    element.alive === true ? (element.alive = "yes") : (element.alive = "no");
     if (element.wand.core.length < 2) {
       element.wand.core = "unknown";
     }
@@ -50,9 +46,8 @@ let sortSchool = data;
 
 const searchForName = (event) => {
   document.querySelector(".hp__bloks_line").innerHTML = "";
-  sortName = sortSchool.filter(
-    (elem) =>
-      elem.actor.toLowerCase().includes(event.target.value.toLowerCase()) ||
+  sortName = sortSchool.filter((elem) => 
+    elem.actor.toLowerCase().includes(event.target.value.toLowerCase()) ||
       elem.name.toLowerCase().includes(event.target.value.toLowerCase())
   );
   getCardsToShow(sortName);
