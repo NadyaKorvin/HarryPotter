@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Harry Potter</title>
+  </head>
+  <body>
+    <header>
+      <h1>Harry Potter</h1>
+      <p class="header__description">View all characters from the Harry Potter universe</p>
+    </header>
+    <main>
+      <div class="input">
+        <div class="input__name">
+          <label for="name">Name</label>
+          <input class="input__for_name" name="name" type="select" placeholder="Hermione" id="name" />
+        </div>
+        <div class="input__school">
+          <label for="school">School</label>
+          <select class = "choseSchool" name="school" id="school">
+            <option class="placeholder__school_select">Choose one</option>
+            <option>Gryffindor</option>
+            <option>Slytherin</option>
+            <option>Hufflepuff</option>
+            <option>Ravenclaw</option>
+          </select>
+        </div>
+      </div>
+      <hr />
+      <div class="hp__bloks_line"></div>
+    </main>
+    <script type="module" src="./js/finder.js"></script>
+  </body>
+</html>
