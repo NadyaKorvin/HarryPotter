@@ -46,8 +46,9 @@ let sortSchool = data;
 
 const searchForName = (event) => {
   document.querySelector(".hp__bloks_line").innerHTML = "";
-  sortName = sortSchool.filter((elem) => 
-    elem.actor.toLowerCase().includes(event.target.value.toLowerCase()) ||
+  sortName = sortSchool.filter(
+    (elem) =>
+      elem.actor.toLowerCase().includes(event.target.value.toLowerCase()) ||
       elem.name.toLowerCase().includes(event.target.value.toLowerCase())
   );
   getCardsToShow(sortName);
